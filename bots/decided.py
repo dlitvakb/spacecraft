@@ -103,7 +103,7 @@ class DecitionTreeClient(BaseDecitionTreeClient):
                     break
             return relative_angle(currentx, currenty, targetx, targety, currentangle)
 
-    def can_smart_turn(self):
+    def can_smart_turn(self, message):
         return -0.3 < self.smart_turn() < 0.3
 
     def frenzy_decition(self):
